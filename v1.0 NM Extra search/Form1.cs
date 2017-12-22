@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace WindowsFormsApp2
 {
@@ -85,6 +86,18 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string file = lbxResults.SelectedItem.ToString();
+            string fullFileName = Path.Combine(@"D:\katalogplikow", file);
+            Process.Start(fullFileName);
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -99,5 +99,12 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string file = lbxResults.SelectedItem.ToString();
+            string fullFileName = Path.Combine(@"D:\katalogplikow", file);
+            Process.Start(fullFileName);
+        }
     }
 }

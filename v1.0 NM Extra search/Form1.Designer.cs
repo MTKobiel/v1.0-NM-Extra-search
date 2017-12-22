@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.Wyszukiwarka = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +65,7 @@
             // 
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(0, 114);
@@ -81,11 +81,11 @@
             this.Wyszukiwarka.AutoSize = true;
             this.Wyszukiwarka.BackColor = System.Drawing.Color.Transparent;
             this.Wyszukiwarka.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Wyszukiwarka.Font = new System.Drawing.Font("Keep Calm Med", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Wyszukiwarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Wyszukiwarka.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Wyszukiwarka.Location = new System.Drawing.Point(33, 607);
             this.Wyszukiwarka.Name = "Wyszukiwarka";
-            this.Wyszukiwarka.Size = new System.Drawing.Size(102, 17);
+            this.Wyszukiwarka.Size = new System.Drawing.Size(90, 15);
             this.Wyszukiwarka.TabIndex = 3;
             this.Wyszukiwarka.Text = "Wyszukiwarka";
             // 
@@ -121,7 +121,7 @@
             // 
             this.txtSearchSubstring.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtSearchSubstring.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearchSubstring.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtSearchSubstring.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtSearchSubstring.Location = new System.Drawing.Point(483, 203);
             this.txtSearchSubstring.Multiline = true;
             this.txtSearchSubstring.Name = "txtSearchSubstring";
@@ -133,20 +133,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(597, 180);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 20);
+            this.label1.Size = new System.Drawing.Size(178, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "WPISZ KOD ELEMENTU";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(210, 366);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(76, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "OTWÓRZ";
             // 
@@ -155,10 +155,10 @@
             this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.InfoText;
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker1.Location = new System.Drawing.Point(973, 607);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // btnDirBrowse
@@ -177,13 +177,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbxResults.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbxResults.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbxResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbxResults.FormattingEnabled = true;
-            this.lbxResults.ItemHeight = 21;
+            this.lbxResults.ItemHeight = 20;
             this.lbxResults.Location = new System.Drawing.Point(214, 406);
             this.lbxResults.Name = "lbxResults";
-            this.lbxResults.Size = new System.Drawing.Size(457, 189);
+            this.lbxResults.Size = new System.Drawing.Size(457, 180);
             this.lbxResults.TabIndex = 10;
+            this.lbxResults.SelectedIndexChanged += new System.EventHandler(this.lbxResults_SelectedIndexChanged);
             // 
             // txtSearchDirectory
             // 
@@ -196,32 +197,43 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(847, 13);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(326, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(285, 33);
+            this.label4.Size = new System.Drawing.Size(267, 31);
             this.label4.TabIndex = 13;
             this.label4.Text = "Nord Mebel Sp z .o.o";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(908, 46);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(384, 44);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 22);
+            this.label5.Size = new System.Drawing.Size(139, 24);
             this.label5.TabIndex = 14;
             this.label5.Text = "ul. Sportowa 11";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(908, 68);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(384, 68);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 22);
+            this.label6.Size = new System.Drawing.Size(133, 24);
             this.label6.TabIndex = 15;
             this.label6.Text = "13-100 Nidzica";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1071, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 69);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Zamknij program";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -230,6 +242,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 633);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -274,6 +287,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }
 

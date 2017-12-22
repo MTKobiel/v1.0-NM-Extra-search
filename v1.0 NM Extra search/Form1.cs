@@ -102,10 +102,17 @@ namespace WindowsFormsApp2
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            string txt = txtSearchDirectory.Text;
-            string file = lbxResults.SelectedItem.ToString();
-            string fullFileName = Path.Combine(txt, file);
-            Process.Start(fullFileName);
+            if (lbxResults.SelectedIndex == -1)
+            {
+                MessageBox.Show("No Item selected");
+            }
+            else
+            {
+                string txt = txtSearchDirectory.Text;
+                string file = lbxResults.SelectedItem.ToString();
+                string fullFileName = Path.Combine(txt, file);
+                Process.Start(fullFileName);
+            }
         }
 
         private void btnSearch_MouseHover(object sender, EventArgs e)

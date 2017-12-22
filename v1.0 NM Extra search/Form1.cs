@@ -102,8 +102,9 @@ namespace WindowsFormsApp2
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            string txt = txtSearchDirectory.Text;
             string file = lbxResults.SelectedItem.ToString();
-            string fullFileName = Path.Combine(@"D:\katalogplikow", file);
+            string fullFileName = Path.Combine(txt, file);
             Process.Start(fullFileName);
         }
 

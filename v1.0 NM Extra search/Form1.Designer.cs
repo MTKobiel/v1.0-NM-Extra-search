@@ -48,6 +48,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,7 +67,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(181, 633);
+            this.panel1.Size = new System.Drawing.Size(181, 646);
             this.panel1.TabIndex = 0;
             // 
             // btnSearch
@@ -73,7 +75,7 @@
             this.btnSearch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSearch.Font = new System.Drawing.Font("Futura Md BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -81,7 +83,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(181, 54);
             this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Wyszukaj";
+            this.btnSearch.Text = "WYSZUKAJ";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.btnSearch.MouseHover += new System.EventHandler(this.btnSearch_MouseHover);
@@ -183,12 +185,12 @@
             this.lbxResults.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbxResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbxResults.Font = new System.Drawing.Font("Monospac821 BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbxResults.FormattingEnabled = true;
-            this.lbxResults.ItemHeight = 20;
+            this.lbxResults.ItemHeight = 19;
             this.lbxResults.Location = new System.Drawing.Point(227, 406);
             this.lbxResults.Name = "lbxResults";
-            this.lbxResults.Size = new System.Drawing.Size(457, 24);
+            this.lbxResults.Size = new System.Drawing.Size(457, 137);
             this.lbxResults.TabIndex = 10;
             this.lbxResults.SelectedIndexChanged += new System.EventHandler(this.lbxResults_SelectedIndexChanged);
             // 
@@ -199,6 +201,7 @@
             this.txtSearchDirectory.ReadOnly = true;
             this.txtSearchDirectory.Size = new System.Drawing.Size(257, 20);
             this.txtSearchDirectory.TabIndex = 11;
+            this.txtSearchDirectory.TextChanged += new System.EventHandler(this.txtSearchDirectory_TextChanged);
             // 
             // button1
             // 
@@ -267,12 +270,34 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "All rights reserved 2017";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Futurist Fixed-width", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(314, 622);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(211, 15);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "VERSION.BETA V.01";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Futurist Fixed-width", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(396, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(691, 15);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Nord Mebel Sp z.o.o.  \\ ul. Sportowa 11  \\ 13-100 Nidzica";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1185, 633);
+            this.ClientSize = new System.Drawing.Size(1185, 646);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSearchDirectory);
@@ -320,6 +345,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

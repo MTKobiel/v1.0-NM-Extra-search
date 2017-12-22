@@ -113,5 +113,10 @@ namespace WindowsFormsApp2
             
             btnSearch.BackColor = Color.DarkRed;
         }
+
+        private void txtSearchDirectory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

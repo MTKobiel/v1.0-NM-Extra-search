@@ -106,5 +106,11 @@ namespace WindowsFormsApp2
             string fullFileName = Path.Combine(@"D:\katalogplikow", file);
             Process.Start(fullFileName);
         }
+
+        private void btnSearch_MouseHover(object sender, EventArgs e)
+        {
+            
+            btnSearch.BackColor = Color.DarkRed;
+        }
     }
 }
